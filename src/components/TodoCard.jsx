@@ -11,7 +11,7 @@ function TodoCard(props) {
             {props.completed ? "Completed" : "Incomplete"}
           </p>
           <p className='todo-id'>
-            Todo# {props.id} by user#{props.userId}
+            Todo# {props.id} by user# {props.userId}
           </p>
         </div>
       </div>
