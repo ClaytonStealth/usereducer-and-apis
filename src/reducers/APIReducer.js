@@ -11,7 +11,7 @@ export default function APIReducer(APIState, action) {
           body: e.body,
         };
       });
-      return [...payload, ...APIState];
+      return payload;
     case "ADD_PAYLOAD_USERS":
       const payloadUsers = action.payload.map((e, i) => {
         return {
@@ -23,7 +23,7 @@ export default function APIReducer(APIState, action) {
           //   address: e.address,
         };
       });
-      return [...payloadUsers, ...APIState];
+      return payloadUsers;
     case "ADD_PAYLOAD_TODOS":
       const payloadTodos = action.payload.map((e, i) => {
         return {
@@ -33,7 +33,7 @@ export default function APIReducer(APIState, action) {
           completed: e.completed,
         };
       });
-      return [...payloadTodos, ...APIState];
+      return payloadTodos;
     default:
       return APIState;
   }

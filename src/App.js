@@ -19,7 +19,7 @@ function App() {
   ];
   const [APIState, dispatch] = useReducer(APIReducer, initialState);
   const [choice, setChoice] = useState(1);
-  const getData = async (request, num) => {
+  const getData = async (request, num, selection) => {
     const response = await fetch(
       `https://jsonplaceholder.typicode.com/${request.toLowerCase()}`
     );

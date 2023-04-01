@@ -3,6 +3,7 @@ import "./NavBar.css";
 const NavBar = (props) => {
   return (
     <nav className='navbar'>
+      <input type='number' />
       <ul className='navbar-nav'>
         <li className='nav-item'>
           <p
@@ -19,7 +20,7 @@ const NavBar = (props) => {
             className='nav-link'
             onClick={() => props.getData("POSTS", 1)}
           >
-            Blog
+            Post
           </p>
         </li>
         <li className='nav-item'>
